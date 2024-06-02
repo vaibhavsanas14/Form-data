@@ -40,7 +40,7 @@ signUpBtn2.addEventListener("click",() => {
 
 form.addEventListener("submit",(e) => {
   e.preventDefault();
-  alert("Sign up Successfully");
+  alert("Sign up Successfully you are go back to home page automatically when ever click on ok button")
   location.href = "index.html";
   location.reload();
 })
