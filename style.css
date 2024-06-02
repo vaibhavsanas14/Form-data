@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+}
+
+body{
+  background: #000;
+  color: #fff;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navbar{
+  width: 100%;
+  height: 68px;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  box-shadow: 0 0 5px rgba(255,255,255,0.2);
+  z-index: -1;
+}
+
+.logo a{
+  font-size: 21px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav-btn button{
+  padding: 10px 30px;
+  font-size: 16px;
+  outline: none;
+  border: 0;
+  color: #fff;
+  background: red;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.menu ion-icon{
+  font-size: 32px;
+  color: #fff;
+}
+
+.menu{
+  z-index: 2;
+  margin-top: 9px;
+}
+
+#sidebar{
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  background: black;
+  height: 100vh;
+  z-index: 1;
+  transition: .3s;
+}
+
+#sidebar.toggle-side{
+  left: 0;
+}
+
+#sidebar > .profile-section{
+  width: 100%;
+  height: 50px;
+  padding: 10px 0 0 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#sidebar > .profile-section #username{
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  user-select: none;
+}
+
+#sidebar > .profile-section ion-icon{
+  font-size: 32px;
+  vertical-align: sub;
+  color: limegreen;
+}
+
+#sidebar > ul{
+  padding: 80px 0 0 15px;
+  list-style: none;
+  text-align: center;
+}
+
+#sidebar ul li{
+  margin-top: 20px;
+}
+
+.hover{
+  font-size: 17px;
+  color: white;
+  font-weight: 500;
+}
+
+#sign-up-btn{
+  position: absolute;
+  right: 60px;
+}
+
+#sign-up-btn button{
+  padding: 12px 35px;
+  background: limegreen;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  border-radius: 5px;
+  border: 0;
+}
+
+
+
+.form-container{
+  width: 100%;
+  height: 100vh;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+}
+
+.toggle-form{
+  left: 0;
+}
+
+#form{
+  width: 90%;
+  height: auto;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 15px;
+  gap: 15px;
+  border-radius: 10px;
+}
+
+#form h1{
+  color: limegreen;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+}
+
+.input-box{
+  width: 100%;
+  height: 55px;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.input-box-btn{
+  width: 100%;
+  height: 55px;
+  margin: 10px 0 15px 0;
+}
+
+.input-box-btn button{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 0;
+  background: limegreen;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.al{
+  margin: 10px 0 15px 0;
+}
+
+.al p{
+  color: #000;
+  font-size: 15px;
+}
+
+.al p a{
+  text-decoration: none;
+  color: limegreen;
+}
+
+.al p a:hover{
+  text-decoration: underline;
+  color: limegreen;
+}
+
+
+#home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#home h1{
+  color: #fff;
+  font-size: 1.7rem;
+}
